@@ -1,0 +1,7 @@
+* efm-langserver config
+This is the =efm-langserver= config for Pen.el.
+
+** Setup
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  ln -s $MYGIT/semiosis/pen-efm-config ~/.config/efm-langserver
+#+END_SRC
