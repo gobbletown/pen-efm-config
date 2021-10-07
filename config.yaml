@@ -25,6 +25,14 @@ tools:
     format-stdin: true
     format-command: htmlbeautifier
 
+  # Display the language for each line
+  prose-lang-lint: &prose-lang-lint
+    lint-command: 'prose-lang-lint -'
+    lint-stdin: true
+    lint-formats:
+      - '%f:%l:%c: %m'
+
+  # Display true/false for each line
   prose-truth-lint: &prose-truth-lint
     lint-command: 'prose-truth-lint -'
     lint-stdin: true
