@@ -28,6 +28,13 @@ tools:
   # The linters, etc. should be generated.
   # Prompts should have a linter: on, for example
 
+  # Explain each line
+  code-explain-lint: &prose-explain-lint
+    lint-command: 'code-explain-lint -'
+    lint-stdin: true
+    lint-formats:
+      - '%f:%l:%c: %m'
+
   # Display the language for each line
   prose-lang-lint: &prose-lang-lint
     lint-command: 'prose-lang-lint -'
