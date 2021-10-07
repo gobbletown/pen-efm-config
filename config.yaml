@@ -25,6 +25,9 @@ tools:
     format-stdin: true
     format-command: htmlbeautifier
 
+  # The linters, etc. should be generated.
+  # Prompts should have a linter: on, for example
+
   # Display the language for each line
   prose-lang-lint: &prose-lang-lint
     lint-command: 'prose-lang-lint -'
