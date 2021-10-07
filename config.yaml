@@ -9,6 +9,14 @@ commands:
     title: Notebook
 
 tools:
+  pen-world-language: &pen-world-language
+    lint-debounce: 2s
+    lint-command: 'erb -x -T - | ruby -c'
+    lint-stdin: true
+    lint-offset: 1
+    format-stdin: true
+    format-command: htmlbeautifier
+
   eruby-erb: &eruby-erb
     lint-debounce: 2s
     lint-command: 'erb -x -T - | ruby -c'
@@ -172,6 +180,9 @@ tools:
     hover-stdin: true
 
 languages:
+  text:
+    - <<: *pen-world-language
+
   eruby:
     - <<: *eruby-erb
 
