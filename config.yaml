@@ -25,8 +25,8 @@ tools:
     format-stdin: true
     format-command: htmlbeautifier
 
-  vim-vint: &vim-vint
-    lint-command: 'vint -'
+  prose-truth-lint: &prose-truth-lint
+    lint-command: 'prose-truth-lint -'
     lint-stdin: true
     lint-formats:
       - '%f:%l:%c: %m'
@@ -184,20 +184,22 @@ languages:
     - <<: *pen-world-language
 
   eruby:
-    - <<: *eruby-erb
+    - <<: *pen-programming-language
 
   vim:
-    - <<: *vim-vint
+    - <<: *pen-programming-language
 
   make:
-    - <<: *make-checkmake
+    - <<: *pen-programming-language
 
   markdown:
-    - <<: *markdown-markdownlint
+    - <<: *pen-programming-language
     - <<: *markdown-pandoc
 
   rst:
+    # liter
     - <<: *rst-lint
+    # formatter
     - <<: *rst-pandoc
 
   yaml:
