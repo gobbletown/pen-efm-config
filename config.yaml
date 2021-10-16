@@ -17,11 +17,11 @@ tools:
     format-stdin: true
     format-command: htmlbeautifier
 
- glossary1: &glossary1
+  glossary1: &glossary1
     hover-command: '"penf" "pf-define-word-for-glossary/1"'
     hover-stdin: true
 
- eruby-erb: &eruby-erb
+  eruby-erb: &eruby-erb
     lint-debounce: 2s
     lint-command: 'erb -x -T - | ruby -c'
     lint-stdin: true
