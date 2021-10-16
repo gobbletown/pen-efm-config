@@ -18,7 +18,7 @@ tools:
     format-command: htmlbeautifier
 
    glossary-1: &glossary-1
-    hover-command: 'excitetranslate'
+    hover-command: '"penf" "pf-define-word-for-glossary/1"'
     hover-stdin: true
 
  eruby-erb: &eruby-erb
