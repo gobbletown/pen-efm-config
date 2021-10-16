@@ -17,7 +17,11 @@ tools:
     format-stdin: true
     format-command: htmlbeautifier
 
-  eruby-erb: &eruby-erb
+   glossary-1: &glossary-1
+    hover-command: 'excitetranslate'
+    hover-stdin: true
+
+ eruby-erb: &eruby-erb
     lint-debounce: 2s
     lint-command: 'erb -x -T - | ruby -c'
     lint-stdin: true
@@ -193,10 +197,6 @@ tools:
       - mix.lock
       - mix.exs
 
-  any-excitetranslate: &any-excitetranslate
-    hover-command: 'excitetranslate'
-    hover-stdin: true
-
 languages:
   text:
     - <<: *pen-world-language
@@ -269,5 +269,5 @@ languages:
     - <<: *mix_credo
 
   _:
-    - <<: *any-excitetranslate
+    - <<: *glossary-1
 
