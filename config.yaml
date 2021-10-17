@@ -2,6 +2,9 @@ version: 2
 root-markers:
   - .git/
 lint-debounce: 1s
+
+# These are the code-actions
+# Implement them
 commands:
   - command: notepad
     arguments:
@@ -28,6 +31,7 @@ tools:
   glossary1: &glossary1
     hover-command: '"ci" "penf" "pf-define-word-for-glossary/1"'
     hover-stdin: true
+    format-command: 'pen-pretty-paragraph'
 
   eruby-erb: &eruby-erb
     lint-debounce: 2s
