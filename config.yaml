@@ -16,7 +16,8 @@ commands:
 
 tools:
   pen-world-language-completion: &pen-world-language-completion
-    completion-command: 'ci penf pf-generic-completion-50-tokens/1'
+    # completion-command: 'ci penf pf-generic-completion-50-tokens/1'
+    completion-command: 'POSITION=${POSITION} penf -u pf-generic-completion-50-tokens/1'
     completion-stdin: true
 
   pen-world-language: &pen-world-language
