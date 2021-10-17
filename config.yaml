@@ -20,9 +20,13 @@ actions:
     title: Pretty
 
 tools:
+  pen-world-language-completion: &pen-world-language-completion
+    completion-command: 'ci penf pf-generic-completion-50-tokens/1'
+    completion-stdin: true
+
   pen-world-language: &pen-world-language
     lint-debounce: 2s
-    lint-command: 'erb -x -T - | ruby -c'
+    lint-command: 'penf pf-generic-completion-50-tokens/1'
     lint-stdin: true
     lint-offset: 1
     format-stdin: true
@@ -224,6 +228,7 @@ tools:
 languages:
   text:
     - <<: *pen-world-language
+    - <<: *pen-world-language-completion
     - <<: *glossary1
 
   eruby:
