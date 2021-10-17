@@ -6,7 +6,7 @@ lint-debounce: 1s
 # These are the code-actions
 # Implement them
 commands:
-  - command: notepad
+  - command: pen-pretty-paragraph
     arguments:
       - ${INPUT}
     title: Notebook
