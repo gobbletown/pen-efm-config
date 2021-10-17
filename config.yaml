@@ -29,6 +29,9 @@ tools:
     format-command: htmlbeautifier
 
   glossary1: &glossary1
+    # The impementation is a combination of documentation and hover
+    # documentation is provided to the thing under the cursor
+    # It's the hover provider (i.e. signature docs)
     hover-command: '"ci" "penf" "pf-define-word-for-glossary/1"'
     hover-stdin: true
     format-command: 'pen-pretty-paragraph'
