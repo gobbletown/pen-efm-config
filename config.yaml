@@ -1,4 +1,4 @@
-version: 2
+2version: 2
 root-markers:
   - .git/
 lint-debounce: 1s
@@ -26,7 +26,7 @@ tools:
     format-command: htmlbeautifier
 
   glossary1: &glossary1
-    hover-command: '"penf" "pf-define-word-for-glossary/1"'
+    hover-command: '"ci" "penf" "pf-define-word-for-glossary/1"'
     hover-stdin: true
 
   eruby-erb: &eruby-erb
