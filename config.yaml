@@ -13,12 +13,6 @@ commands:
       - ${INPUT}
     title: Pretty
 
-actions:
-  - command: pen-pretty-paragraph
-    arguments:
-      - ${INPUT}
-    title: Pretty
-
 tools:
   pen-world-language-completion: &pen-world-language-completion
     completion-command: 'ci penf pf-generic-completion-50-tokens/1'
