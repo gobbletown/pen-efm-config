@@ -47,6 +47,8 @@ tools:
     # The rest go to the hover provider as signature docs
     hover-command: '"ci" "penf" "pf-define-word-for-glossary/1"'
     hover-stdin: true
+    # hover-type: "markdown"
+    # hover-type: "plaintext"
     format-command: 'pen-pretty-paragraph'
 
   eruby-erb: &eruby-erb
