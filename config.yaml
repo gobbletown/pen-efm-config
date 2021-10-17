@@ -3,9 +3,17 @@ root-markers:
   - .git/
 lint-debounce: 1s
 
-# These are the code-actions
-# Implement them
+# These are not the code-actions
+# They are executeCommand
+# Bu they still appear under
+# helm-lsp-code-actions
 commands:
+  - command: pen-pretty-paragraph
+    arguments:
+      - ${INPUT}
+    title: Pretty
+
+actions:
   - command: pen-pretty-paragraph
     arguments:
       - ${INPUT}
