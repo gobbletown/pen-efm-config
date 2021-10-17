@@ -9,7 +9,7 @@ commands:
   - command: pen-pretty-paragraph
     arguments:
       - ${INPUT}
-    title: Notebook
+    title: Pretty
 
 tools:
   pen-world-language: &pen-world-language
