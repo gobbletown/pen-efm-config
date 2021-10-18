@@ -23,6 +23,15 @@ tools:
     completion-command: 'POSITION=${POSITION} pen-lsp-complete'
     completion-stdin: true
 
+  pen-programming-language-completion: &pen-programming-language-completion
+    # completion-command: 'ci penf pf-generic-completion-50-tokens/1'
+
+    # TODO create a code complete script
+    # TODO Figure out how to get the language into this script
+    # I probably need to extend efm-langserver
+    completion-command: 'POSITION=${POSITION} pen-lsp-complete'
+    completion-stdin: true
+
   pen-world-language: &pen-world-language
     lint-debounce: 2s
     lint-command: 'penf pf-generic-completion-50-tokens/1'
@@ -33,6 +42,8 @@ tools:
 
   pen-programming-language: &pen-programming-language
     lint-debounce: 2s
+    # TODO Figure out how to get the language into this script
+    # I probably need to extend efm-langserver
     lint-command: 'penf pf-generic-completion-50-tokens/1'
     lint-stdin: true
     lint-offset: 1
@@ -235,6 +246,11 @@ languages:
   org:
     - <<: *pen-world-language
     - <<: *pen-world-language-completion
+    - <<: *glossary1
+
+  awk:
+    - <<: *pen-programming-language
+    - <<: *pen-programming-language-completion
     - <<: *glossary1
 
   eruby:
